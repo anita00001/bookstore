@@ -26,7 +26,8 @@ const booksSlice = createSlice({
   initialState,
   reducers: {
     addBook: (state, action) => {
-      state.books.push(action.payload);
+      const newBookItem = action.payload;
+      state.push(newBookItem);
     },
 
     removeBook: (state, action) => {
