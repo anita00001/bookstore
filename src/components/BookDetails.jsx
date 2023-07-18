@@ -6,27 +6,7 @@
 // |-- InputBook
 
 import { useSelector } from 'react-redux';
-
-// const bookList = [
-//   // {
-//   //   id: 1,
-//   //   category: 'Action',
-//   //   title: 'The Hunger Games',
-//   //   author: 'Suzanne Collins',
-//   // },
-//   // {
-//   //   id: 2,
-//   //   category: 'Science Fiction',
-//   //   title: 'Dune',
-//   //   author: 'Frank Herbert',
-//   // },
-//   // {
-//   //   id: 3,
-//   //   category: 'Economy',
-//   //   title: 'Capital in the Twenty-First Century',
-//   //   author: 'Suzanne Collins',
-//   // },
-// ];
+import Buttons from './buttons';
 
 const BookDetails = () => {
   const bookList = useSelector((state) => state.books);
@@ -52,23 +32,9 @@ const BookDetails = () => {
             {'  '}
             {book.author}
           </li>
+          <Buttons itemId={book.item_id} />
         </ul>
       ))}
-      <button
-        type="submit"
-      >
-        Comments
-      </button>
-      <button
-        type="submit"
-      >
-        Remove
-      </button>
-      <button
-        type="submit"
-      >
-        Edit
-      </button>
     </div>
   );
 };
