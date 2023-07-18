@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const initialState = [];
+
 const booksSlice = createSlice({
   name: 'books',
-  initialState: {
-    books: [],
-  },
+  initialState,
   reducers: {
     addBook: (state, action) => {
       state.books.push(action.payload);
