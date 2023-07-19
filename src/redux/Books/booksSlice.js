@@ -1,42 +1,83 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+// import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const initialState = [
-  {
-    item_id: 'item1',
-    title: 'The Great Gatsby',
-    author: 'John Smith',
-    category: 'Fiction',
+const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
+const apiKey = 'ia3yMWMEvNiSm4Uw3RX9';
+
+const URL = `${baseURL}${apiKey}/books`;
+
+const initialState = {
+  books: [],
+  isLoading: false,
+  error: undefined,
+};
+
+export const fetchBooks = createAsyncThunk(
+  'books/fetchBooks',
+  async (thunkAPI) => {
+    try {
+      const response = await axios(URL);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue('Error fetching books');
+    }
   },
-  {
-    item_id: 'item2',
-    title: 'Anna Karenina',
-    author: 'Leo Tolstoy',
-    category: 'Fiction',
+);
+
+export const addBook = createAsyncThunk(
+  'books/addBook',
+  async (book, thunkAPI) => {
+    try {
+      const response = await axios.post(URL, book);
+      thunkAPI.dispatch(fetchBooks());
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue('Error adding book');
+    }
   },
-  {
-    item_id: 'item3',
-    title: 'The Selfish Gene',
-    author: 'Richard Dawkins',
-    category: 'Nonfiction',
+);
+
+export const removeBook = createAsyncThunk(
+  'books/removeBook',
+  async (id, thunkAPI) => {
+    try {
+      const response = await axios.delete(`${URL}/${id}`, id);
+      thunkAPI.dispatch(fetchBooks());
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue('Error removing book');
+    }
   },
-];
+);
 
 const booksSlice = createSlice({
   name: 'books',
   initialState,
-  reducers: {
-    addBook: (state, action) => {
-      const newBookItem = action.payload;
-      state.push(newBookItem);
-    },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchBooks.pending, (state) => {
+        state.isLoading = true;
+      })
 
-    removeBook: (state, action) => {
-      const index = action.payload;
-      return state.filter((book) => book.item_id !== index);
-    },
+      .addCase(fetchBooks.fulfilled, (state, action) => {
+        state.isLoading = false;
+        const data = Object.keys(action.payload).map((item) => {
+          const book = {};
+          book.item_id = item;
+          book.title = action.payload[item][0].title;
+          book.author = action.payload[item][0].author;
+          book.category = action.payload[item][0].category;
+          return book;
+        });
+        state.books = data;
+      })
+
+      .addCase(fetchBooks.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload;
+      });
   },
 });
-
-export const { addBook, removeBook } = booksSlice.actions;
 
 export default booksSlice.reducer;
