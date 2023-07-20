@@ -5,11 +5,18 @@
 // |   |-- ProgressDetails
 // |-- InputBook
 
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchBooks } from '../redux/Books/booksSlice';
 import Buttons from './buttons';
 
 const BookDetails = () => {
-  const bookList = useSelector((state) => state.books);
+  const bookList = useSelector((state) => state.books.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
 
   return (
     <div>
