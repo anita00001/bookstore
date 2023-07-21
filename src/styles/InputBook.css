@@ -1,12 +1,14 @@
 .input-container {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .add-book-section {
-  width: 87rem;
+  width: 90%;
+  padding: 0 1rem;
 }
 
 .add-book-section > h2 {
@@ -38,7 +40,7 @@
 }
 
 .new-entry > input:first-child {
-  width: 45.5rem;
+  width: 50%;
   height: 3.5rem;
 }
 
@@ -57,12 +59,12 @@
 }
 
 .new-entry > input:nth-child(2) {
-  width: 20.25rem;
+  width: 25.25%;
 }
 
 .new-entry > button {
   border: none;
-  width: 17.5rem;
+  width: 18%;
   border-radius: 3px;
   background-color: #0290ff;
   font-family: RobotoSlab, sans-serif;

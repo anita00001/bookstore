@@ -15,7 +15,7 @@ const BookDetails = () => {
   const bookList = useSelector((state) => state.books);
 
   return (
-    <div>
+    <div className="card">
       {bookList.map((book) => (
         <section key={book.item_id} className="book-card">
           <ul

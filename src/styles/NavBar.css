@@ -1,8 +1,7 @@
 .navbar-container {
-  width: 87.5rem;
-  height: 5.938rem;
-  margin: 0 0 2.375rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0 2.5rem;
   background-color: #fff;
 }
 
@@ -12,8 +11,7 @@
 }
 
 .nav-bar > .logo {
-  width: 15rem;
-  height: 2.313rem;
+  width: 25%;
   font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
@@ -28,12 +26,11 @@
   display: flex;
   gap: 3rem;
   align-items: center;
-  width: 80%;
+  width: 75%;
 }
 
 .nav-link > li {
   list-style: none;
-  height: 1rem;
   color: #121212;
   font-family: Montserrat, sans-serif;
   font-size: 0.813rem;

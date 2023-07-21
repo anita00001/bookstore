@@ -1,7 +1,8 @@
+.progress-details {
+  padding-right: 8rem;
+}
+
 .progress-details > .chapter > p:first-child {
-  width: 7.875rem;
-  height: 1.125rem;
-  margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
   font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
@@ -11,11 +12,10 @@
   line-height: normal;
   letter-spacing: normal;
   color: #121212;
+  margin-bottom: -0.5rem;
 }
 
 .progress-details > .chapter > p:last-child {
-  height: 1.313rem;
-  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
   font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -30,8 +30,6 @@
   border: none;
   width: 11.5rem;
   height: 2.063rem;
-  margin: 0.75rem 0 0.563rem 3.688rem;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
   background-color: #0290ff;
   font-family: RobotoSlab, sans-serif;

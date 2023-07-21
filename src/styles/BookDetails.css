@@ -1,23 +1,31 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .book-card {
   display: flex;
-  width: 75rem;
+  width: 90%;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 1rem 0;
-  padding: 0 12rem 0 0;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
 
+.book-card > ul {
+  width: 30%;
+}
+
 .book-card > ul > li {
   list-style: none;
+  padding: 0.3rem 0;
 }
 
 .category {
-  width: 3.063rem;
-  height: 1.125rem;
-  margin: 0 2.438rem 0 0;
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
@@ -30,9 +38,6 @@
 }
 
 .title {
-  width: 12.313rem;
-  height: 1.813rem;
-  margin: 0.188rem 20.188rem 0 0;
   font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
@@ -44,9 +49,6 @@
 }
 
 .author {
-  width: 6.688rem;
-  height: 1.188rem;
-  margin: 0.25rem 0 0;
   font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
