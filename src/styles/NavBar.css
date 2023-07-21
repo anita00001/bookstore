@@ -1,7 +1,7 @@
 .navbar-container {
   width: 90%;
-  margin: 2rem auto;
   padding: 0 2.5rem;
+  margin: 2rem auto;
   background-color: #fff;
 }
 
@@ -15,30 +15,22 @@
   font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #0290ff;
 }
 
 .nav-link {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
   width: 75%;
+  gap: 3rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link > li {
-  list-style: none;
-  color: #121212;
   font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
+  list-style: none;
+  color: #121212;
 }
 
 li :-webkit-any-link {

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .add-book-section {
@@ -14,17 +14,14 @@
 .add-book-section > h2 {
   width: 100%;
   height: 1.5rem;
+  padding: 1.5rem 0;
+  margin: 2.125rem 0 0 0;
   font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.18px;
   color: #888;
-  padding: 1.5rem 0;
   border-top: 1px solid #e8e8e8;
-  margin: 2.125rem 0 0 0;
 }
 
 .new-entry {
@@ -33,10 +30,11 @@
 }
 
 .new-entry > input {
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  background-color: #fff;
+  padding: 0 2.5rem;
   margin-right: 2.125rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .new-entry > input:first-child {
@@ -47,13 +45,9 @@
 .new-entry > input::placeholder {
   width: 4.75rem;
   height: 1.188rem;
-  padding: 0 1rem;
+  padding: 1rem;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.15px;
   color: #c4c4c4;
 }
@@ -63,17 +57,14 @@
 }
 
 .new-entry > button {
-  border: none;
   width: 18%;
-  border-radius: 3px;
-  background-color: #0290ff;
+  text-align: center;
   font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
-  text-align: center;
+  border: none;
+  border-radius: 3px;
   color: #fff;
+  background-color: #0290ff;
 }

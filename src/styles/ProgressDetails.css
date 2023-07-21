@@ -3,42 +3,32 @@
 }
 
 .progress-details > .chapter > p:first-child {
-  opacity: 0.5;
+  margin-bottom: -0.5rem;
   font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  opacity: 0.5;
   color: #121212;
-  margin-bottom: -0.5rem;
 }
 
 .progress-details > .chapter > p:last-child {
   font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
   color: #121212;
 }
 
 .progress-details > button {
-  border: none;
   width: 11.5rem;
   height: 2.063rem;
-  border-radius: 3px;
-  background-color: #0290ff;
   font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
+  border: none;
+  border-radius: 3px;
   color: #fff;
+  background-color: #0290ff;
 }
