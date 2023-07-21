@@ -1,0 +1,49 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book-card {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.book-card > ul {
+  width: 30%;
+}
+
+.book-card > ul > li {
+  list-style: none;
+  padding: 0.3rem 0;
+}
+
+.category {
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.title {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}

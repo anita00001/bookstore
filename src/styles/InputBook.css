@@ -1,0 +1,70 @@
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.add-book-section {
+  width: 90%;
+  padding: 0 1rem;
+}
+
+.add-book-section > h2 {
+  width: 100%;
+  height: 1.5rem;
+  padding: 1.5rem 0;
+  margin: 2.125rem 0 0 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+  border-top: 1px solid #e8e8e8;
+}
+
+.new-entry {
+  width: 100%;
+  display: flex;
+}
+
+.new-entry > input {
+  padding: 0 2.5rem;
+  margin-right: 2.125rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.new-entry > input:first-child {
+  width: 50%;
+  height: 3.5rem;
+}
+
+.new-entry > input::placeholder {
+  width: 4.75rem;
+  height: 1.188rem;
+  padding: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.new-entry > input:nth-child(2) {
+  width: 25.25%;
+}
+
+.new-entry > button {
+  width: 18%;
+  text-align: center;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #0290ff;
+}

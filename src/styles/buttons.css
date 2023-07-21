@@ -1,0 +1,24 @@
+.action-btn {
+  border: none;
+  height: 1rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  background-color: #fff;
+}
+
+.action-btn:first-child {
+  margin-left: -0.5rem;
+  padding-right: 1.5rem;
+}
+
+.action-btn:last-child {
+  padding-left: 1.5rem;
+}
+
+.action-btn:nth-child(2) {
+  padding: 0 1.5rem;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}

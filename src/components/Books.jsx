@@ -1,10 +1,3 @@
-// Books
-// |-- BookCard
-// |   |-- BookDetails
-// |   |-- CompleteStatus
-// |   |-- ProgressDetails
-// |-- InputBook
-
 import BookCard from './BookCard';
 import InputBook from './InputBook';
 
