@@ -6,14 +6,14 @@
 // |-- InputBook
 
 import BookDetails from './BookDetails';
-import CompleteStatus from './CompleteStatus';
-import ProgressDetails from './ProgressDetails';
+// import CompleteStatus from './CompleteStatus';
+// import ProgressDetails from './ProgressDetails';
 
 const BookCard = () => (
-  <div className="card">
+  <div>
     <BookDetails />
-    <CompleteStatus />
-    <ProgressDetails />
+    {/* <CompleteStatus />
+    <ProgressDetails /> */}
   </div>
 );
 
