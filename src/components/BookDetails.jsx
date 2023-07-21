@@ -1,10 +1,3 @@
-// Books
-// |-- BookCard
-// |   |-- BookDetails
-// |   |-- CompleteStatus
-// |   |-- ProgressDetails
-// |-- InputBook
-
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchBooks } from '../redux/Books/booksSlice';

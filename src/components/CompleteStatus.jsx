@@ -1,10 +1,3 @@
-// Books
-// |-- BookCard
-// |   |-- BookDetails
-// |   |-- CompleteStatus
-// |   |-- ProgressDetails
-// |-- InputBook
-
 import PropType from 'prop-types';
 import '../styles/CompleteStatus.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
