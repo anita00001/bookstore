@@ -6,14 +6,11 @@
 // |-- InputBook
 
 import BookDetails from './BookDetails';
-import CompleteStatus from './CompleteStatus';
-import ProgressDetails from './ProgressDetails';
+import '../styles/BookCard.css';
 
 const BookCard = () => (
   <div className="card">
     <BookDetails />
-    <CompleteStatus />
-    <ProgressDetails />
   </div>
 );
 

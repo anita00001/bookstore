@@ -1,0 +1,57 @@
+.navbar-container {
+  width: 87.5rem;
+  height: 5.938rem;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar > .logo {
+  width: 15rem;
+  height: 2.313rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.nav-link {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  width: 80%;
+}
+
+.nav-link > li {
+  list-style: none;
+  height: 1rem;
+  color: #121212;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+li :-webkit-any-link {
+  text-decoration: none;
+}
+
+.nav-link > li:nth-child(2) {
+  opacity: 0.5;
+}
+
+.nav-link > li:last-child {
+  margin-left: auto;
+}

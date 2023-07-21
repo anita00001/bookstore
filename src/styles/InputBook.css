@@ -1,0 +1,77 @@
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add-book-section {
+  width: 87rem;
+}
+
+.add-book-section > h2 {
+  width: 100%;
+  height: 1.5rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e8e8e8;
+  margin: 2.125rem 0 0 0;
+}
+
+.new-entry {
+  width: 100%;
+  display: flex;
+}
+
+.new-entry > input {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  margin-right: 2.125rem;
+}
+
+.new-entry > input:first-child {
+  width: 45.5rem;
+  height: 3.5rem;
+}
+
+.new-entry > input::placeholder {
+  width: 4.75rem;
+  height: 1.188rem;
+  padding: 0 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.new-entry > input:nth-child(2) {
+  width: 20.25rem;
+}
+
+.new-entry > button {
+  border: none;
+  width: 17.5rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
